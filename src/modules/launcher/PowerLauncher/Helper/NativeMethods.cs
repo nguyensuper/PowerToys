@@ -37,6 +37,9 @@ namespace PowerLauncher.Helper
         internal static extern int SetWindowLong(IntPtr hWnd, int nIndex, int dwNewLong);
 
         [DllImport("user32.dll")]
+        internal static extern int SetWindowLong(IntPtr hWnd, int nIndex, long dwNewLong);
+
+        [DllImport("user32.dll")]
         internal static extern IntPtr GetForegroundWindow();
 
         [DllImport("user32.dll")]
